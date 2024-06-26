@@ -1,1 +1,93 @@
+.headerSection .content {
+  text-align: center;
+  margin-top: 1rem;
+}
 
+.headerSection .content .brand {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.headerSection .content .brand img {
+  max-width: 200px;
+}
+
+.headerSection .content .text {
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+}
+
+/* product Section */
+
+.productSection {
+  padding: 2rem;
+  margin-top: 50px;
+}
+
+.productSection .title {
+  text-align: center;
+  font-size: 3rem;
+  color: orange;
+  display: block;
+  border-bottom: 2px solid #e6e6e6;
+  margin-bottom: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.productSection .productContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+.productSection .productContainer .item {
+  background-image: linear-gradient(
+    rgba(238, 238, 238, 0.2),
+    rgba(0, 162, 255, 0.2)
+  );
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+}
+
+.productSection .productContainer .item:hover .itemImage .productImage {
+  transform: translateY(-10px);
+}
+
+.productSection .productContainer .item .itemImage .productImage {
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  height: auto;
+}
+
+.productSection .productContainer .item .itemContent .name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #0077ff;
+}
+
+.productSection .productContainer .item .itemContent .price {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.productSection .productContainer .item .itemContent .productBtn {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 1.55rem;
+  border: 1px solid #ffa500;
+  background-color: #ffa500;
+  font-weight: 600;
+  border-radius: 100vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.productSection .productContainer .item .itemContent .productBtn:hover {
+  background-color: transparent;
+}

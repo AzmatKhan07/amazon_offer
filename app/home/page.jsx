@@ -1,7 +1,15 @@
 import React from "react";
+import Header from "../_components/Header";
+import ProductSection from "../_components/Product";
 
 function Product() {
-  return <div>this is product page</div>;
+  return (
+    <>
+      <Header />
+      <ProductSection category="Jersey" />
+      <ProductSection category="T-shirt" />
+    </>
+  );
 }
 
 export default Product;
